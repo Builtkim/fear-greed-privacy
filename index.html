@@ -42,15 +42,21 @@
         <!-- 한국어 섹션 -->
         <div class="lang-section">
             <h1>개인정보처리방침 (Privacy Policy)</h1>
-            <p><strong>시행일/개정일: 2026-10-10</strong><br>
-            개정 요약: 광고 개인정보 동의 창(UMP), 전체 이용권(Google Play 선불 결제), 무료 포인트 기기 내 저장 안내를 추가·정정했습니다.</p>
+            <p><strong>시행일/개정일: 2026-10-11</strong><br>
+            개정 요약: 구글 로그인 정보와 구매 이력·유료 포인트 잔액의 서버 보관 및 복구 안내를 추가했습니다. 무료 포인트는 기기에만 저장됩니다.</p>
             <p>공포탐욕지수 (Fear & Greed Index Widget)(이하 "앱")은 다음과 같이 개인정보를 처리합니다.</p>
             
             <h2>1. 수집·저장하는 정보</h2>
-            <p>본 앱은 계정 가입을 요구하지 않으며, 앱이 운영하는 사용자 데이터베이스 서버가 없습니다. 다음 정보는 일반적으로 다른 앱이 직접 접근할 수 없는 사용자의 기기 안 앱 전용 저장 공간에 저장됩니다. 사용자가 이미지를 공유하면 선택한 앱에 해당 이미지 접근 권한이 제공됩니다:</p>
+            <p>본 앱의 일반 기능은 계정 가입 없이 사용할 수 있으며, 충전팩 구매와 유료 포인트 복구에는 구글 로그인이 필요합니다. 다음 정보는 일반적으로 다른 앱이 직접 접근할 수 없는 사용자의 기기 안 앱 전용 저장 공간에 저장됩니다. 사용자가 이미지를 공유하면 선택한 앱에 해당 이미지 접근 권한이 제공됩니다:</p>
             <ul>
                 <li>감정·행동 기록(메모·종목 포함), 퀴즈·학습 진도, 설정, 관심종목, 최근 본 종목(최대 5개), 위젯 설정과 위젯 종목, 시장 데이터 캐시, 공유 이미지 임시 파일, 포인트 잔액, 10분 열람권 만료 시각, 전체 이용권 이용 여부와 마지막 확인 시각, 구글 확인 대기 중인 구매 토큰</li>
             </ul>
+            <p>구글 로그인과 유료 포인트 기능을 이용하면 다음 정보가 앱의 서버(Supabase)에 저장됩니다:</p>
+            <ul>
+                <li>구글 로그인 시 서버의 로그인 서비스(Supabase Auth)의 기본 동작에 따라 로그인 계정 식별자(UID)와 이메일 주소가 저장될 수 있습니다. 이 정보는 구매한 포인트 복구와 중복 지급 방지를 위해 사용합니다. 계정·데이터 삭제는 앱 정보의 개발자 연락처(<code>builtkim@gmail.com</code>)로 요청하실 수 있습니다.</li>
+                <li>충전팩 구매 이력(구매 토큰, 주문 번호, 상품 정보), 유료 포인트 잔액, 유료 포인트 적립·사용·환불 내역과 변경 시각</li>
+            </ul>
+            <p>이 정보는 로그인 계정 확인, 구매 검증, 중복 지급·사용 방지, 환불 처리, 재설치·기기 변경 시 남은 유료 포인트 복구를 위해 보관합니다. 광고·기록 보상으로 받은 무료 포인트는 서버에 올리지 않습니다.</p>
             <p><strong>자동 백업 및 수동 백업</strong></p>
             <ul>
                 <li><strong>Android 자동 백업:</strong> 기기 설정에 따라 기록·설정 등 앱 데이터 일부가 사용자의 Google 계정에 자동으로 백업되어 새 기기에서 복원될 수 있으며, 포인트·이용권 데이터 및 공유 이미지·시세 캐시 같은 임시 캐시 파일은 제외됩니다. 이 백업 데이터의 보관 및 삭제는 사용자의 Google 계정 설정을 따릅니다.</li>
@@ -63,7 +69,8 @@
                 <li>CNN, Yahoo Finance, Alternative.me, 네이버 금융, Google 뉴스, 앱 전용 지표 API(Vercel 호스팅)</li>
             </ul>
             <p>또한, 사용자가 앱 내에서 뉴스 링크, 검색 결과, 개인정보처리방침 링크 등을 누르면 기기의 브라우저 또는 해당 링크를 처리하는 앱이 열립니다(Google 검색, 뉴스 출처 사이트, GitHub Pages 등).</p>
-            <p>이러한 요청에 사용자의 이름이나 연락처는 포함되지 않으나, 인터넷 접속 특성상 IP 주소 등 기본 접속 정보가 해당 서버에 전달되고 각 서비스의 정책에 따라 처리될 수 있습니다.</p>
+            <p>지표·시세·뉴스 요청에 사용자의 이름이나 연락처는 포함되지 않으나, 인터넷 접속 특성상 IP 주소 등 기본 접속 정보가 해당 서버에 전달되고 각 서비스의 정책에 따라 처리될 수 있습니다.</p>
+            <p>구글 로그인과 유료 포인트 보관·복구에는 Google과 Supabase를 이용합니다. 이용권의 유효 기간은 앱의 서버가 Google Play에 확인하며, 구매 토큰이 확인 과정에서 전달됩니다.</p>
 
             <h2>3. 광고</h2>
             <p>앱은 Google AdMob을 통해 배너, 전면, 보상형 광고를 제공합니다.</p>
@@ -74,10 +81,10 @@
             </ul>
 
             <h2>4. 결제</h2>
-            <p>전체 이용권(24시간·7일)은 Google Play 선불 정기결제(자동 갱신 없음)로 구매하며, 같은 구글 계정으로 앱을 다시 설치하면 유효한 이용권이 복구됩니다. 무료 포인트(광고·기록 보상)는 이 기기에만 저장되며, 앱을 지우거나 기기를 바꾸면 복구되지 않습니다.</p>
+            <p>전체 이용권(24시간·7일)은 Google Play 선불 정기결제(자동 갱신 없음)로 구매하며, 같은 구글 계정으로 앱을 다시 설치하면 유효한 이용권이 복구됩니다. 충전팩으로 구매한 포인트는 앱에 연결한 구글 계정에 귀속되며, 재설치·기기 변경 후 같은 계정으로 로그인하여 서버에 기록된 남은 유료 잔액을 복구합니다. 무료 포인트(광고·기록 보상)는 이 기기에만 저장되며, 앱을 지우거나 기기를 바꾸면 복구되지 않습니다.</p>
             <ul>
                 <li>카드 번호나 계좌 정보 등의 결제 정보는 Google Play가 직접 처리하며 앱과 개발자에게 전달되지 않습니다.</li>
-                <li>구매 확인과 중복 지급 방지를 위해 앱은 구글에서 확인한 이용권 이용 여부와 마지막 확인 시각, 확인 대기 중인 구매 토큰, 포인트 잔액을 기기 안에 저장합니다. 구매 내역은 Google Play 계정에서 확인하실 수 있습니다.</li>
+                <li>구매 확인과 중복 지급 방지를 위해 앱은 구글에서 확인한 이용권 이용 여부와 만료 시각·마지막 확인 시각, 확인 대기 중인 구매 토큰, 무료 포인트 잔액과 서버에서 확인한 유료 잔액, 연결된 계정 식별자와 이메일(제공된 경우)을 기기 안에 저장합니다. 구매 내역은 Google Play 계정에서 확인하실 수 있습니다.</li>
             </ul>
 
             <h2>5. 기기 권한</h2>
@@ -86,8 +93,8 @@
             <h2>6. 보관·삭제</h2>
             <ul>
                 <li>앱 설정의 "내 심리 기록 초기화" 기능을 통해 이전 버전 사본을 포함한 기록을 지울 수 있습니다. 초기화 기능은 기존 백업을 직접 삭제하지 않으며, 자동 백업 및 수동 백업 파일은 각각 사용자의 Google 계정 설정과 파일 관리자를 통해 직접 지워야 합니다.</li>
-                <li>앱을 기기에서 삭제하면 앱 전용 저장 공간의 데이터가 삭제됩니다. 외부로 내보낸 백업 파일과 다른 앱에 공유한 사본은 남을 수 있습니다.</li>
-                <li>광고 관련 데이터와 구매 내역의 보관 및 삭제는 각각 Google과 Google Play의 정책을 따릅니다.</li>
+                <li>앱을 기기에서 삭제하면 앱 전용 저장 공간의 데이터가 삭제됩니다. 재설치·기기 변경 후 유료 포인트를 복구하기 위해 서버에 보관하는 로그인 정보·구매 이력·유료 잔액은 앱 삭제로 지워지지 않습니다. 외부로 내보낸 백업 파일과 다른 앱에 공유한 사본은 남을 수 있습니다.</li>
+                <li>광고 관련 데이터와 Google Play에 보관된 구매 내역의 보관 및 삭제는 각각 Google과 Google Play의 정책을 따릅니다.</li>
             </ul>
 
             <h2>7. 아동</h2>
@@ -103,15 +110,21 @@
         <!-- 영어 섹션 -->
         <div class="lang-section" style="border-top: 2px dashed var(--line); padding-top: 24px;">
             <h1>Privacy Policy (English)</h1>
-            <p><strong>Effective Date / Last Updated: 2026-10-10</strong><br>
-            Summary of Changes: Added and corrected information on the ad consent message (UMP), Full Access passes (Google Play prepaid plans), and device-only storage of free points.</p>
+            <p><strong>Effective Date / Last Updated: 2026-10-11</strong><br>
+            Summary of Changes: Added information on server storage and restoration of Google sign-in information, purchase history, and paid points balances. Free points remain stored only on your device.</p>
             <p>Fear & Greed Index Widget ("the App") handles information as follows.</p>
             
             <h2>1. Information We Collect and Store</h2>
-            <p>The App does not require account registration and does not operate a user database server. The following information is stored in the app's dedicated storage space on your device, which generally cannot be directly accessed by other apps. When you share an image, the app you choose is given access to that image:</p>
+            <p>The App's general features can be used without account registration. Google sign-in is required to purchase points packs and restore paid points. The following information is stored in the app's dedicated storage space on your device, which generally cannot be directly accessed by other apps. When you share an image, the app you choose is given access to that image:</p>
             <ul>
                 <li>Emotion/behavior logs (including memos and symbols), quizzes/learning progress, settings, watchlists, recently viewed symbols (up to 5), widget settings and widget symbols, market data cache, temporary files for shared images, points balance, 10-minute access expiration times, Full Access pass status and its last verification time, purchase tokens awaiting confirmation.</li>
             </ul>
+            <p>When you use Google sign-in and paid points features, the following information is stored on the App's server (Supabase):</p>
+            <ul>
+                <li>When you sign in with Google, your sign-in account identifier (UID) and email address may be stored by the server's sign-in service (Supabase Auth) as part of its default behavior. This information is used to restore purchased points and prevent duplicate credits. You can request account and data deletion through the developer contact in App Information (<code>builtkim@gmail.com</code>).</li>
+                <li>Points pack purchase history (purchase tokens, order numbers, and product information), paid points balance, paid points credits, usage and refunds, and the times of changes.</li>
+            </ul>
+            <p>This information is retained to identify your sign-in account, verify purchases, prevent duplicate credits and spending, process refunds, and restore remaining paid points after reinstallation or a device change. Free points earned through ads or records are not uploaded to the server.</p>
             <p><strong>Automatic and Manual Backups</strong></p>
             <ul>
                 <li><strong>Android Auto Backup:</strong> Depending on your device settings, some app data such as records and settings may be automatically backed up to your Google account and restored on a new device, excluding points, pass data, and temporary cache files like shared images and market data caches. The retention and deletion of this backup data follow your Google account settings.</li>
@@ -124,7 +137,8 @@
                 <li>CNN, Yahoo Finance, Alternative.me, Naver Finance, Google News, and a dedicated indicator API (hosted on Vercel).</li>
             </ul>
             <p>Additionally, when you tap on news links, search results, or the privacy policy link within the App, your device's browser or the app handling the link will open (for sites such as Google Search, news source websites, GitHub Pages, etc.).</p>
-            <p>These requests do not contain your name or contact information. However, due to the nature of the internet, basic connection data such as your IP address may be transmitted to these servers and handled according to each service's respective policies.</p>
+            <p>Requests for indicators, market quotes, and news do not contain your name or contact information. However, due to the nature of the internet, basic connection data such as your IP address may be transmitted to these servers and handled according to each service's respective policies.</p>
+            <p>The App uses Google and Supabase for Google sign-in and paid points storage and restoration. The App's server checks pass validity with Google Play, and purchase tokens are transmitted during verification.</p>
 
             <h2>3. Advertising</h2>
             <p>The App uses Google AdMob to provide banner, interstitial, and rewarded ads.</p>
@@ -135,10 +149,10 @@
             </ul>
 
             <h2>4. Payments</h2>
-            <p>Full Access passes (24-hour and 7-day) are purchased as Google Play prepaid plans (no automatic renewal), and an active pass is restored when you reinstall the App with the same Google account. Free points (earned by ads and records) are stored only on this device and cannot be restored if you delete the App or switch devices.</p>
+            <p>Full Access passes (24-hour and 7-day) are purchased as Google Play prepaid plans (no automatic renewal), and an active pass is restored when you reinstall the App with the same Google account. Points purchased through points packs belong to the Google account connected in the App. After reinstallation or a device change, sign in with the same account to restore the remaining paid balance recorded on the server. Free points (earned by ads and records) are stored only on this device and cannot be restored if you delete the App or switch devices.</p>
             <ul>
                 <li>Payment details such as credit card or bank account information are processed directly by Google Play and are not shared with the App or the developer.</li>
-                <li>To confirm purchases and prevent duplicate rewards, the App stores, on your device, the pass status confirmed by Google, its last verification time, purchase tokens awaiting confirmation, and your points balance. You can check your purchase history in your Google Play account.</li>
+                <li>To confirm purchases and prevent duplicate rewards, the App stores, on your device, the pass status confirmed by Google, its expiration and last verification times, purchase tokens awaiting confirmation, your free points balance and the paid balance confirmed by the server, and your connected account identifier and email address (if provided). You can check your purchase history in your Google Play account.</li>
             </ul>
 
             <h2>5. Device Permissions</h2>
@@ -147,8 +161,8 @@
             <h2>6. Data Retention and Deletion</h2>
             <ul>
                 <li>You can clear your records (including previous version copies) using the "Reset Investment Records" feature in the app settings. The reset feature does not directly delete existing backups; Android Auto Backup and manual backup files must be managed or deleted directly through your Google account settings and file manager, respectively.</li>
-                <li>Uninstalling the App from your device will delete the data in the app's dedicated storage space. Exported backup files and copies shared to other apps may remain.</li>
-                <li>Data related to advertising and purchase history are governed by Google's and Google Play's policies, respectively.</li>
+                <li>Uninstalling the App from your device will delete the data in the app's dedicated storage space. Sign-in information, purchase history, and paid balances retained on the server to restore paid points after reinstallation or a device change are not deleted by uninstalling the App. Exported backup files and copies shared to other apps may remain.</li>
+                <li>Data related to advertising and purchase history held by Google Play are governed by Google's and Google Play's policies, respectively.</li>
             </ul>
 
             <h2>7. Children</h2>
@@ -162,7 +176,7 @@
         </div>
 
         <div class="footer">
-            © 2026 FearGreedWidget. All rights reserved. Last updated: October 10, 2026.
+            © 2026 FearGreedWidget. All rights reserved. Last updated: October 11, 2026.
         </div>
     </div>
 </body>
